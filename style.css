@@ -1,0 +1,299 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+}
+
+img{
+    color: white;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 3;
+}
+
+.header{
+    background-image: radial-gradient(circle at center center, #fffb00, #48ff00), repeating-radial-gradient(circle at center center, #eff156, #fbff00, 10px, transparent 20px, transparent 10px);
+    background-blend-mode: multiply;
+}
+.nav{
+    height: 100.4vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.logo{
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.logo img{
+    height: 100px;
+}
+.logo a{
+    height: 100px;
+    transition: 0.2s;
+}
+.logo a:hover{
+    scale: 1.1;
+}
+.rock-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rock-logo img{
+    height: 100vh;
+    transition: 0.1s;
+}
+.rock-logo img:hover{
+    scale: 1.1;
+}
+.nav-enlaces{
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 30px;
+}
+.nav-enlaces a{
+    text-decoration: none;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    transition: 0.1s;
+}
+.nav-enlaces a:hover{
+    color: white;
+}
+.nav-enlaces p{
+    transition: 0.1s;
+}
+.nav-enlaces p:hover{
+    scale: 1.2;
+}
+.main{  
+    background-color: #000000;
+    display: grid;
+}
+
+.informacion{
+    position: relative  ;
+    height: 110vh;
+    display: grid;
+
+}
+.informacion-descripcion{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    animation-name: desvanecer;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes desvanecer {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+.section1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+.luis-spinetta{
+    height: 110vh;
+    background-image: url(https://github.com/Nefastium/Rock-Project/blob/main/Artistas/Spinetta/1.jpg?raw=true);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s; 
+    filter: blur(5px);
+}
+
+.luis-spinetta:hover{
+    filter: blur(0px);
+}
+
+.charly-garcia{
+    height: 110vh;
+    background-image: url(https://github.com/Nefastium/Rock-Project/blob/main/Artistas/Charly%20Garcia/1.jpg?raw=true);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    filter: blur(5px);
+}
+
+.charly-garcia:hover{
+    filter: blur(0px);
+}
+
+.section2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gustavo-cerati{
+    height: 120vh;
+    background-image: url(https://github.com/Nefastium/Rock-Project/blob/main/Artistas/Gustavo%20Cerati/1.jpg?raw=true);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    filter: blur(5px);
+}
+
+.gustavo-cerati:hover{
+    filter: blur(0px);
+}
+
+.fito-paez{
+    height: 120vh;
+    background-image: url(https://github.com/Nefastium/Rock-Project/blob/main/Artistas/Fito%20Paez/Fito%20Paez.jpg?raw=true);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    filter: blur(5px);
+}
+
+.fito-paez:hover{
+    filter: blur(0px);
+}
+
+.section3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pity-alvarez{
+    height: 120vh;
+    background-image: url(https://github.com/Nefastium/Rock-Project/blob/main/Artistas/Pity%20Alvarez/1.jpg?raw=true);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    filter: blur(5px);
+}
+
+.pity-alvarez:hover{
+    filter: blur(0px);
+}
+
+.andres-calamaro{
+    height: 120vh;
+    background-image: url(https://github.com/Nefastium/Rock-Project/blob/main/Artistas/Andres%20Calamaro/1.jpg?raw=true);
+    background-size: cover;
+    background-position:top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    filter: blur(5px);
+}
+
+.andres-calamaro:hover{
+    filter: blur(0px);
+}
+
+.footer{
+    height: 60vh;
+    background-color: #7b82ff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer h2{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+
+.footer p{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer img{
+    height: 50vh;
+    transition: 0.2s;
+}
+
+.logo-footer img:hover{
+    scale: 1.1;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-spinetta{
+    height: 100vh;
+    background: url(https://github.com/Nefastium/Rock-Project/blob/main/Artistas/Spinetta/3.jpg?raw=true);
+    background-position: center;
+    background-size: cover;
+    transition: 0.2s    ;
+}
+
+.nav-spinetta{
+    height: 20vh;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.nav-title-spinetta{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-title-spinetta h1{
+    font-size: 4rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
